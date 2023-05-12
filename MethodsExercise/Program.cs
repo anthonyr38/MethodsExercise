@@ -1,4 +1,6 @@
-﻿namespace MethodsExercise
+﻿using System.ComponentModel;
+
+namespace MethodsExercise
 {
     public class Program
     {
@@ -34,8 +36,69 @@
             Console.WriteLine($"and front row tickets to a performance by {favBand}.");
             Console.WriteLine($"{favBand} will be accompanied by a giant dancing {favAnimal}.");
             Console.WriteLine($"We are also including all your meals at an all you can eat {favFood} bar");
-            
+
+
+            //C# Methods Exercise 2
+
+            Console.WriteLine("C# Methods Exercise 2");
+
+            //Console.WriteLine("Please enter first number.");
+            //int num1 = Console.ReadLine();
+
+            //Console.WriteLine("please enter second number.");
+            //int num2 = Console.ReadLine();
+
+            int num1 = 4;
+            int num2 = 7;
+
+
+
+
+            //Calling Methods of Mathematical Operators
+            // int twoPlusTwo = Add(2, 2);
+            // Console.WriteLine(twoPlusTwo);
+            // Other option
+            // Console.WriteLine(Add(2, 2));
+
+
+            Add(num1, num2);
+
+            Multiply(3, 3);
+
+            Subtract(3, 3);
+
+            Divide(3, 3);
+
+            Modulus(2, 2);
+
 
         }
+            public static int Add(int num1, int num2)
+            {
+                return (num1 + num2);
+            }
+
+            public static int Multiply(int num1, int num2)
+            {
+                return (num1 * num2);
+            }
+
+            public static int Subtract(int num1, int num2)
+            {
+                return (num1 - num2);
+            }
+
+            public static int Divide(int num1, int num2)
+            {
+                return (num1 / num2);
+            }
+
+            public static int Modulus(int num1, int num2)
+            {
+                return (num1 % num2);
+            }
+                                               
+        
+
     }
 }
